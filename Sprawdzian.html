@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <title>Tytuł strony</title>
+    </head>
+    <body>
+        <script>
+            function Name()
+            {
+            
+                document.write("Nazywam się Kacper Kryszczak");
+            
+            }
+            
+            function EvenNumbers(number)
+            {
+                if(number % 2 == 0)
+                    document.write("Liczba " + number + " jest parzysta <br>");
+                else
+                    document.write("Liczba " + number + " jest nieparzysta <br>");
+            }
+
+            function WhichIsBigger(number1, number2)
+            {
+                if(number1 > number2)
+                    document.write("Liczba " + number1 + " jest większa od " + number2 + "<br>");
+                else
+                    document.write("Liczba " + number2 + " jest większa od "+ number1 +"<br>");
+            }
+
+            function zero(time)
+            {
+                if(time < 10)
+                    return "0" + time;
+                return time;            
+            }
+            function CurrentTime()
+            {
+                let data = new Date();
+                hour=zero(data.getHours());
+                minutes=zero(data.getMinutes());
+                seconds=zero(data.getSeconds());
+                document.write(hour + ":" + minutes + ":" + seconds);
+            }
+
+            function From1To100()
+            {
+                for(let i = 0; i <= 100; i++)
+                document.write(i + ", ");
+            }
+
+             CurrentTime()
+          //  EvenNumbers(6)
+           // EvenNumbers(3)
+           // WhichIsBigger(7,3)
+            //WhichIsBigger(0,1)
+            //From1To100()
+        </script>
+    </body>
+</html>
