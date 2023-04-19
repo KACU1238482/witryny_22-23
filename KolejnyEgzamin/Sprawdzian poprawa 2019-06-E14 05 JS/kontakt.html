@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <title>Usługi Informatyczne</title>
+        <link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <div id="kontener">
+            <div id="logo">
+                <img src="logo.png" alt="logo firmy">
+            </div>
+            <div id="menu">
+                <a href="index.html">O nas</a>
+                <a href="uslugi.html">Usługi</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            <div id="baner">
+                <img src="animacja.gif">
+            </div>
+        </div>
+        <div id="glowny">
+            <hr>
+                <h2>Kontakt</h2>
+                <form>
+                <table>
+                    <tr><td>Imię:</td> <td><input type="text" id="imie"></td></tr>
+                    <tr><td>Nazwisko:</td> <td><input type="text" id="nazwisko"></td></tr>
+                    <tr><td>E-mail:</td> <td><input type="text" id="email"></td></tr>
+                    <tr><td>Usluga:</td> <td><input type="text" id="usluga"></td></tr>
+                    <tr><td></td> <td><input type="checkbox" id="zgoda">Zapoznałam/em się z regulaminem</td></tr>
+                    <tr><td></td> <td><input type="reset" value="Resetuj"><input type="button" value="Prześlij" onclick="Przeslij()"></td></tr>
+                </table>
+                </form>
+                <p id="wynik"></p>
+            </hr>
+        </div>
+        <div id="stopka">
+            Autor strony: <b>Kacper Kryszczak</b>
+        </div>
+    </body>
+    <script>
+/*        function Przeslij()
+        {
+            var imie = document.getElementById("imie").value;
+            var nazwisko = document.getElementById("nazwisko").value;
+            var usluga = document.getElementById("usluga").value;
+            var zgoda = document.getElementById("zgoda").checked;
+
+            if (zgoda == true)
+        }
+*/
+    </script>
+</html>
